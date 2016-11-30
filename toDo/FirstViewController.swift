@@ -8,8 +8,13 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    let list = ["Buy milk", "Run 5 miles", "Get Peter", "Plant my new plants"]
+    
+    @IBOutlet weak var myTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
